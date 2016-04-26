@@ -1,22 +1,20 @@
-# Remote.Linq
+# Remote.Linq.EntityFramework
 
-Remote Linq is a small and easy to use - yet very powerful - library to translate linq expression trees to strongly typed, serializable expression trees and vice versa. It provides functionality to send arbitrary linq queries to a remote service to be applied and executed against any enumerable or queryable data collection.
+| branch | package | AppVeyor | Travis |
+| --- | --- | --- | --- |
+| `dnx` | [![NuGet Badge](https://buildstats.info/nuget/Remote.Linq.EntityFramework?includePreReleases=true)](http://www.nuget.org/packages/Remote.Linq.EntityFramework) [![MyGet Pre Release](http://img.shields.io/myget/aqua/vpre/Remote.Linq.EntityFramework.svg?style=flat-square&label=myget)](https://www.myget.org/feed/aqua/package/nuget/Remote.Linq.EntityFramework) | [![Build status](https://ci.appveyor.com/api/projects/status/64kw6dsuvfwyrdtl?svg=true)](https://ci.appveyor.com/project/6bee/remote-linq) | [![Travis build Status](https://travis-ci.org/6bee/Remote.Linq.EntityFramework.svg?branch=dnx)](https://travis-ci.org/6bee/Remote.Linq.EntityFramework?branch=dnx) |
 
-Building a LINQ interface for custom services is made a breeze by using Remote Linq.
 
+Remote linq extensions for entity framework. 
 
-Features:
-* Translate linq expressions into serializable expression trees (remote linq expression) and vice versa. 
-* Build remote single-type query services (paging, sorting, filtering)
-* Build remote complex linq query services (arbitrary linq query including joins, groupings, aggregations, projections, etc.)
-* Use the remote linq DynamicObject type to transport arbitrary objetc graphs over the wire.
+Use this package to apply eager-loading (Include-expressions) to EF queries.
 
 
 ```
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 Get Latest Version from NuGet
-PM> Install-Package Remote.Linq
+PM> Install-Package Remote.Linq.EntityFramework
 
-https://www.nuget.org/packages/Remote.Linq/ 
+https://www.nuget.org/packages/Remote.Linq.EntityFramework/ 
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 ```
