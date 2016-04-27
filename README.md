@@ -8,13 +8,3 @@
 Remote linq extensions for entity framework. 
 
 Use this package to apply eager-loading (Include-expressions) to EF queries.
-
-
-```
-* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-Get Latest Version from NuGet
-PM> Install-Package Remote.Linq.EntityFramework
-
-https://www.nuget.org/packages/Remote.Linq.EntityFramework/ 
-* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-```
