@@ -13,8 +13,6 @@
     "EntityFramework": "[6.0.1,7.0)"
   },
   "frameworks": {
-    "dnx45": { },
-    "net45": { },
-    "net40-client": { }
+    "net451": { }
   }
 }
