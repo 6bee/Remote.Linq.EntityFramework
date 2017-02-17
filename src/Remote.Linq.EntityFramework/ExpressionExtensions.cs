@@ -63,7 +63,9 @@ namespace Remote.Linq.EntityFramework
 
         /// <summary>
         /// Prepares the query <see cref="Expression"/> to be able to be executed. <para/> 
-        /// Use this method if you wan to execute the <see cref="System.Linq.Expressions.Expression"/> and map the raw result yourself.
+        /// Use this method if you wan to execute the <see cref="System.Linq.Expressions.Expression"/> and map the raw result yourself. <para/> 
+        /// Please note that Inlude operation has no effect if using non-generic method <see cref="IQueryable" /> <see cref="DbContext" />.Get(<see cref="Type" />) as queryableProvider.
+        /// Better use generic version instead.
         /// </summary>
         /// <param name="expression">The <see cref="Expression"/> to be executed</param>
         /// <param name="queryableProvider">Delegate to provide <see cref="IQueryable"/> instances based on <see cref="Type"/>s</param>
