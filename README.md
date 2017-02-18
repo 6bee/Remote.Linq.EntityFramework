@@ -7,4 +7,34 @@
 
 Remote linq extensions for entity framework. 
 
-Use this package to apply eager-loading (Include-expressions) to EF queries.
+Use this package to apply eager-loading (`Include`-expressions) to EF queries.
+
+## Sample
+
+### Client
+
+Query blogs including posts and owner
+
+```C#
+using (var repository = new RemoteRepository())
+{
+  var blogs = repository.Blogs
+    .Include("Posts")
+    .Include("Owner")
+    .ToList();
+}
+```
+
+### Server
+
+Execute query on database via EF Core
+
+```C#
+public IEnumerable<DynamicObject> ExecuteQuery(Expression queryExpression)
+{
+  using (var dbContext = new EfDbContext())
+  {
+    return queryExpression.ExecuteWithEntityFrameworkCore(dbContext);
+  }
+}
+```
