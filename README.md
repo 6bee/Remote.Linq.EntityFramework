@@ -27,7 +27,7 @@ using (var repository = new RemoteRepository())
 
 ### Server
 
-Execute query on database via EF Core
+Execute query on database via EF
 
 ```C#
 public IEnumerable<DynamicObject> ExecuteQuery(Expression queryExpression)
