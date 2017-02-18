@@ -1,5 +1,0 @@
-language: csharp
-install:
-  - nuget restore Remote.Linq.EntityFramework.sln
-script:
-  - xbuild /p:Configuration=Release Remote.Linq.EntityFramework.sln
