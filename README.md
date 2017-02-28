@@ -34,7 +34,7 @@ public IEnumerable<DynamicObject> ExecuteQuery(Expression queryExpression)
 {
   using (var dbContext = new EfDbContext())
   {
-    return queryExpression.ExecuteWithEntityFrameworkCore(dbContext);
+    return queryExpression.ExecuteWithEntityFramework(dbContext);
   }
 }
 ```
