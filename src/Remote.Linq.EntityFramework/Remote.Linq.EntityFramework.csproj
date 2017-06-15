@@ -1,0 +1,34 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Description>Remote linq extensions for entity framework. Use this package to apply eager-loading (i.e. using Include-expressions) to EF queries.</Description>
+    <Copyright>Copyright Christof Senn 2013-2017</Copyright>
+    <VersionPrefix>1.4.0</VersionPrefix>
+    <Authors>Christof Senn</Authors>
+    <TargetFrameworks>net451</TargetFrameworks>
+    <AssemblyName>Remote.Linq.EntityFramework</AssemblyName>
+    <PackageId>Remote.Linq.EntityFramework</PackageId>
+    <PackageTags>LINQ,expression-tree,lambda,dynamic,remote,remote-query,multi-tier,n-tier,fluent-interface,entity-framework,ef</PackageTags>
+    <PackageIconUrl>https://raw.githubusercontent.com/6bee/Remote.Linq.EntityFramework/master/remotelinq-small.png</PackageIconUrl>
+    <PackageProjectUrl>https://github.com/6bee/Remote.Linq.EntityFramework</PackageProjectUrl>
+    <PackageLicenseUrl>https://raw.githubusercontent.com/6bee/Remote.Linq.EntityFramework/master/license.txt</PackageLicenseUrl>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>https://github.com/6bee/Remote.Linq.EntityFramework.git</RepositoryUrl>
+    <GenerateAssemblyTitleAttribute>false</GenerateAssemblyTitleAttribute>
+    <GenerateAssemblyDescriptionAttribute>false</GenerateAssemblyDescriptionAttribute>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyCopyrightAttribute>false</GenerateAssemblyCopyrightAttribute>
+    <GenerateAssemblyVersionAttribute>false</GenerateAssemblyVersionAttribute>
+    <GenerateAssemblyFileVersionAttribute>false</GenerateAssemblyFileVersionAttribute>
+    <TreatWarningsAsErrors>True</TreatWarningsAsErrors>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Remote.Linq" Version="5.4.1" />
+    <PackageReference Include="EntityFramework" Version="[6.0.1,7.0)" />
+  </ItemGroup>
+
+</Project>

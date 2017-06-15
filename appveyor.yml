@@ -1,14 +1,24 @@
+image: Visual Studio 2017
+
+branches:
+  except:
+  - experimental
+
 init:
   - git config --global core.autocrlf true
-branches:
-  only:
-    - master
+
 version: 1.0.{build}
+
 before_build:
-- cmd: dotnet restore
+  - dotnet --info
+  - dotnet restore
+
 build_script:
-- cmd: dotnet build .\src\Remote.Linq.EntityFramework\ .\test\Remote.Linq.EntityFramework.Tests\
+  - dotnet build src\Remote.Linq.EntityFramework
+  - dotnet build test\Remote.Linq.EntityFramework.Tests
+
 test_script:
-- cmd: dotnet test .\test\Remote.Linq.EntityFramework.Tests\
+  - dotnet test test\Remote.Linq.EntityFramework.Tests\Remote.Linq.EntityFramework.Tests.csproj
+
 build:
   verbosity: normal
