@@ -71,7 +71,7 @@ namespace Remote.Linq.EntityFramework
         /// <returns>A <see cref="System.Linq.Expressions.Expression"/> ready for execution</returns>
         public static System.Linq.Expressions.Expression PrepareForExecutionWithEntityFramework(this Expression expression, Func<Type, IQueryable> queryableProvider, ITypeResolver typeResolver = null)
         {
-            var expression1 = expression.ReplaceIncludeMethodCall(typeResolver);
+            var expression1 = expression.ReplaceIncludeMethodCall();
 
             var linqExpression = expression1.PrepareForExecution(queryableProvider, typeResolver);
             return linqExpression;
