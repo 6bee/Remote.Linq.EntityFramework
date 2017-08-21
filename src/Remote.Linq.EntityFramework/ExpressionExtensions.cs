@@ -73,8 +73,11 @@ namespace Remote.Linq.EntityFramework
         {
             var expression1 = expression.ReplaceIncludeMethodCall();
 
-            var linqExpression = expression1.PrepareForExecution(queryableProvider, typeResolver);
-            return linqExpression;
+            var linqExpression1 = expression1.PrepareForExecution(queryableProvider, typeResolver);
+
+            var linqExpression2 = linqExpression1.ReplaceParameterizedConstructorCallsForVariableQueryArguments();
+
+            return linqExpression2;
         }
 
         /// <summary>

@@ -7,7 +7,7 @@
 
 Remote linq extensions for entity framework. 
 
-Use this package to apply eager-loading (`Include`-expressions) to EF queries.
+Use this package for proper integration with EF6 as well as to apply eager-loading (`Include`-expressions) to EF queries.
 
 ## Sample
 
