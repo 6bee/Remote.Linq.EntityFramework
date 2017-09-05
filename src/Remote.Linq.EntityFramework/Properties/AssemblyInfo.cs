@@ -10,7 +10,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyProduct("Remote.Linq.EntityFramework")]
 [assembly: AssemblyCompany("Christof Senn")]
-[assembly: AssemblyCopyright("Copyright © Christof Senn 2013-2016")]
+[assembly: AssemblyCopyright("Copyright © Christof Senn 2013-2017")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -35,4 +35,4 @@ using System.Runtime.InteropServices;
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
 [assembly: AssemblyVersion("1.0.0.0")]
-[assembly: AssemblyFileVersion("1.4.0.0")]
+[assembly: AssemblyFileVersion("1.5.0.0")]
