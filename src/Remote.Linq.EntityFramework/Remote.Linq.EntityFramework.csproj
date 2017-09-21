@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Description>Remote linq extensions for entity framework. Use this package to apply eager-loading (i.e. using Include-expressions) to EF queries.</Description>
     <Copyright>Copyright Christof Senn 2013-2017</Copyright>
-    <VersionPrefix>1.5.1</VersionPrefix>
+    <VersionPrefix>1.6.0-alpha</VersionPrefix>
     <Authors>Christof Senn</Authors>
     <TargetFrameworks>net451</TargetFrameworks>
     <AssemblyName>Remote.Linq.EntityFramework</AssemblyName>
@@ -27,7 +27,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Remote.Linq" Version="5.5.0" />
+    <PackageReference Include="Remote.Linq" Version="5.6.0-alpha-003" />
     <PackageReference Include="EntityFramework" Version="[6.0.1,7.0)" />
   </ItemGroup>
 
